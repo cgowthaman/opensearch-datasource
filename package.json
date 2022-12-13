@@ -3,7 +3,7 @@
   "version": "2.0.5",
   "description": "",
   "scripts": {
-    "build": "grafana-toolkit plugin:build",
+    "build": "grafana-toolkit plugin:build --skipTest --skipLint",
     "test": "grafana-toolkit plugin:test",
     "dev": "grafana-toolkit plugin:dev",
     "watch": "grafana-toolkit plugin:dev --watch",

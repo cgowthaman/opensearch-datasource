@@ -6,7 +6,7 @@ import (
 
 	simplejson "github.com/bitly/go-simplejson"
 
-	"github.com/grafana/opensearch-datasource/pkg/tsdb"
+	"github.com/cgowthaman/opensearch-datasource/pkg/tsdb"
 )
 
 type Flavor string

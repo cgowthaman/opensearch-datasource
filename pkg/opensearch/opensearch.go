@@ -7,8 +7,8 @@ import (
 	"github.com/grafana/grafana-plugin-sdk-go/backend"
 	"github.com/grafana/grafana-plugin-sdk-go/backend/instancemgmt"
 	"github.com/grafana/grafana-plugin-sdk-go/backend/log"
-	es "github.com/grafana/opensearch-datasource/pkg/opensearch/client"
-	"github.com/grafana/opensearch-datasource/pkg/tsdb"
+	es "github.com/cgowthaman/opensearch-datasource/pkg/opensearch/client"
+	"github.com/cgowthaman/opensearch-datasource/pkg/tsdb"
 )
 
 // OpenSearchExecutor represents a handler for handling OpenSearch datasource request

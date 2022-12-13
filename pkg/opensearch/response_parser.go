@@ -10,10 +10,10 @@ import (
 	simplejson "github.com/bitly/go-simplejson"
 	"github.com/grafana/grafana-plugin-sdk-go/backend"
 	"github.com/grafana/grafana-plugin-sdk-go/data"
-	"github.com/grafana/opensearch-datasource/pkg/null"
-	es "github.com/grafana/opensearch-datasource/pkg/opensearch/client"
-	"github.com/grafana/opensearch-datasource/pkg/tsdb"
-	"github.com/grafana/opensearch-datasource/pkg/utils"
+	"github.com/cgowthaman/opensearch-datasource/pkg/null"
+	es "github.com/cgowthaman/opensearch-datasource/pkg/opensearch/client"
+	"github.com/cgowthaman/opensearch-datasource/pkg/tsdb"
+	"github.com/cgowthaman/opensearch-datasource/pkg/utils"
 )
 
 const (

@@ -5,14 +5,14 @@ import (
 
 	"github.com/grafana/grafana-plugin-sdk-go/backend/datasource"
 	"github.com/grafana/grafana-plugin-sdk-go/backend/log"
-	"github.com/grafana/opensearch-datasource/pkg/opensearch"
+	"github.com/cgowthaman/opensearch-datasource/pkg/opensearch"
 )
 
 func main() {
 	// Start listening to requests send from Grafana. This call is blocking so
 	// it wont finish until Grafana shuts down the process or the plugin choose
 	// to exit close down by itself
-	err := datasource.Manage("grafana-opensearch-datasource", opensearch.NewOpenSearchDatasource, datasource.ManageOpts{})
+	err := datasource.Manage("grafana-opensearch-serverless-datasource", opensearch.NewOpenSearchDatasource, datasource.ManageOpts{})
 
 	// Log any error if we could not start the plugin.
 	if err != nil {

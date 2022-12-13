@@ -2,7 +2,7 @@ package opensearch
 
 import (
 	"github.com/grafana/grafana-plugin-sdk-go/backend"
-	es "github.com/grafana/opensearch-datasource/pkg/opensearch/client"
+	es "github.com/cgowthaman/opensearch-datasource/pkg/opensearch/client"
 )
 
 type pplHandler struct {

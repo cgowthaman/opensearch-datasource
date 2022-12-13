@@ -20,7 +20,7 @@ import (
 	"github.com/grafana/grafana-aws-sdk/pkg/sigv4"
 	"github.com/grafana/grafana-plugin-sdk-go/backend"
 	"github.com/grafana/grafana-plugin-sdk-go/backend/log"
-	"github.com/grafana/opensearch-datasource/pkg/tsdb"
+	"github.com/cgowthaman/opensearch-datasource/pkg/tsdb"
 	"golang.org/x/net/context/ctxhttp"
 )
 
@@ -83,7 +83,7 @@ func GetSigV4Config(ds *backend.DataSourceInstanceSettings) (*sigv4.Config, erro
 	}
 
 	sigV4Config := &sigv4.Config{
-		Service:       "es", // Always "es" for elasticsearch/opendistro/opensearch TODO: Check if this is correct
+		Service:       "aoss", // Always "es" for elasticsearch/opendistro/opensearch TODO: Check if this is correct
 		AccessKey:     decrypted["sigV4AccessKey"],
 		SecretKey:     decrypted["sigV4SecretKey"],
 		Region:        jsonData.Get("sigV4Region").MustString(),
@@ -290,6 +290,7 @@ func (c *baseClientImpl) executeRequest(method, uriPath, uriQuery string, body [
 
 	req.Header.Set("User-Agent", "Grafana")
 	req.Header.Set("Content-Type", "application/json")
+	//req.Header.Add("X-Amz-Content-Sha256", "UNSIGNED-PAYLOAD")
 
 	dsHttpOpts, err := c.ds.HTTPClientOptions()
 	if err != nil {
@@ -514,6 +515,7 @@ func (c *baseClientImpl) executePPLQueryRequest(method, uriPath string, body []b
 
 	req.Header.Set("User-Agent", "Grafana")
 	req.Header.Set("Content-Type", "application/json")
+	//req.Header.Add("X-Amz-Content-Sha256", "UNSIGNED-PAYLOAD")
 	dsHttpOpts, err := c.ds.HTTPClientOptions()
 	if err != nil {
 		return nil, err

@@ -1,6 +1,6 @@
 {
   "type": "datasource",
-  "name": "OpenSearch",
+  "name": "OpenSearchServerless",
   "id": "grafana-opensearch-datasource",
   "category": "logging",
   "alerting": true,
@@ -9,7 +9,7 @@
   "logs": true,
   "backend": true,
 
-  "executable": "gpx_opensearch-datasource",
+  "executable": "gpx_opensearch-s-datasource",
   "info": {
     "description": "",
     "author": {

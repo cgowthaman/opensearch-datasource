@@ -4,7 +4,7 @@ import (
 	"strings"
 
 	"github.com/Masterminds/semver"
-	"github.com/grafana/opensearch-datasource/pkg/tsdb"
+	"github.com/cgowthaman/opensearch-datasource/pkg/tsdb"
 )
 
 // SearchRequestBuilder represents a builder which can build a search request

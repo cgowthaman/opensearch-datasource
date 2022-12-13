@@ -7,8 +7,8 @@ import (
 
 	"github.com/Masterminds/semver"
 	"github.com/grafana/grafana-plugin-sdk-go/backend"
-	es "github.com/grafana/opensearch-datasource/pkg/opensearch/client"
-	"github.com/grafana/opensearch-datasource/pkg/tsdb"
+	es "github.com/cgowthaman/opensearch-datasource/pkg/opensearch/client"
+	"github.com/cgowthaman/opensearch-datasource/pkg/tsdb"
 	. "github.com/smartystreets/goconvey/convey"
 )
 

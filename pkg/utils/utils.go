@@ -5,7 +5,7 @@ import (
 	"time"
 
 	"github.com/bitly/go-simplejson"
-	"github.com/grafana/opensearch-datasource/pkg/null"
+	"github.com/cgowthaman/opensearch-datasource/pkg/null"
 )
 
 func NewJsonFromAny(data interface{}) *simplejson.Json {

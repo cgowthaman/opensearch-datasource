@@ -6,9 +6,9 @@ import (
 	"time"
 
 	"github.com/grafana/grafana-plugin-sdk-go/backend"
-	es "github.com/grafana/opensearch-datasource/pkg/opensearch/client"
-	"github.com/grafana/opensearch-datasource/pkg/tsdb"
-	"github.com/grafana/opensearch-datasource/pkg/utils"
+	es "github.com/cgowthaman/opensearch-datasource/pkg/opensearch/client"
+	"github.com/cgowthaman/opensearch-datasource/pkg/tsdb"
+	"github.com/cgowthaman/opensearch-datasource/pkg/utils"
 )
 
 type luceneHandler struct {

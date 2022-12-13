@@ -1,4 +1,4 @@
-module github.com/grafana/opensearch-datasource
+module github.com/cgowthaman/opensearch-datasource
 
 go 1.14
 
